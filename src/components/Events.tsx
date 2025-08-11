@@ -9,7 +9,7 @@ const Events = () => {
   const events = [
     {
       id: 1,
-      title: "Night Street Racing Championship",
+      title: "Gear up",
       date: "March 15, 2024",
       time: "10:00 PM",
       location: "Downtown Circuit",

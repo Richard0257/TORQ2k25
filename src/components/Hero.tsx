@@ -25,8 +25,8 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl md:text-7xl font-black text-foreground mb-6 tracking-wider leading-tight">
-          <span className="text-neon animate-speed-glow">NITRO</span>{" "}
-          <span className="text-speed">DRIVE</span>{" "}
+          <span className="text-neon animate-speed-glow">TORQ</span>{" "}
+          <span className="text-speed">2K25</span>{" "}
           <span className="text-foreground">EVENTS</span>
         </h1>
         

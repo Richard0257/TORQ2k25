@@ -26,7 +26,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-neon font-[900] tracking-wider">
-              NITRO DRIVE
+              TORQ2K25
             </h1>
           </div>
 
