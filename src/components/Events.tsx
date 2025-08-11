@@ -10,123 +10,80 @@ const Events = () => {
     {
       id: 1,
       title: "Gear up",
-      date: "March 15, 2024",
-      time: "10:00 PM",
-      location: "Downtown Circuit",
-      participants: "50+ Racers",
+      date: "August 23, 2025",
+      time: "10:00 AM to 12:00 PM",
       image: event1,
-      price: "$150",
-      category: "Street Racing",
     },
     {
       id: 2,
-      title: "Drift Masters Tournament",
-      date: "March 22, 2024",
-      time: "8:00 PM",
-      location: "Industrial Zone",
-      participants: "30+ Drifters",
+      title: "CAD Ace",
+      date: "August 23, 2025",
+      time: "1:00PM - 3:00PM",
       image: event2,
-      price: "$200",
-      category: "Drift Racing",
     },
     {
       id: 3,
-      title: "Quarter Mile Thunder",
-      date: "March 29, 2024",
-      time: "9:00 PM",
-      location: "Airport Strip",
-      participants: "40+ Speed Demons",
+      title: "Beams to briliance",
+      date: "August 23, 2025",
+      time: "12:00PM - 2:00PM",
       image: event1,
-      price: "$175",
-      category: "Drag Racing",
     },
     {
       id: 4,
-      title: "Midnight Pursuit Challenge",
-      date: "April 5, 2024",
-      time: "11:00 PM",
-      location: "Highway Circuit",
-      participants: "60+ Drivers",
+      title: "Tech Buzz",
+      date: "August 23, 2025",
+      time: " 2:00PM - 3:30PM",
       image: event2,
-      price: "$180",
-      category: "Pursuit Racing",
     },
     {
       id: 5,
-      title: "Turbo Boost Showdown",
-      date: "April 12, 2024",
-      time: "9:30 PM",
-      location: "Port District",
-      participants: "35+ Tuners",
+      title: "Research Drift",
+      date: "August 23, 2025",
+      time: "10:30AM - 12:00PM",
       image: event1,
-      price: "$220",
-      category: "Tuner Racing",
     },
     {
       id: 6,
-      title: "Neon Rush Finals",
-      date: "April 19, 2024",
-      time: "10:30 PM",
-      location: "City Center",
-      participants: "70+ Racers",
+      title: "Battles Bot ",
+      date: "August 23, 2025",
+      time: "10:00AM - 12:00PM",
       image: event2,
-      price: "$250",
-      category: "Circuit Racing",
     },
     {
       id: 7,
-      title: "Nitrous Nights",
-      date: "April 26, 2024",
-      time: "9:00 PM",
-      location: "Warehouse District",
-      participants: "45+ Speed Freaks",
+      title: "Fluid thrust",
+      date: "August 23, 2025",
+      time: "12:00PM - 2:00PM",
       image: event1,
-      price: "$190",
-      category: "Nitrous Racing",
     },
     {
       id: 8,
-      title: "Underground Legends",
-      date: "May 3, 2024",
-      time: "11:30 PM",
-      location: "Underground Tunnels",
-      participants: "25+ Elite Racers",
+      title: "Forensic Fury",
+      date: "August 23, 2025",
+      time: "1:00PM - 3:30PM",
       image: event2,
-      price: "$300",
-      category: "Underground",
     },
     {
       id: 9,
-      title: "Speed Demon Classic",
-      date: "May 10, 2024",
-      time: "8:30 PM",
-      location: "Desert Highway",
-      participants: "55+ Classic Cars",
+      title: "Heist Hunt ",
+      date: "August 23, 2025",
+      time: "12:00PM - 2:00PM",
       image: event1,
-      price: "$160",
-      category: "Classic Racing",
     },
     {
       id: 10,
-      title: "Adrenaline Rush Championship",
-      date: "May 17, 2024",
-      time: "10:00 PM",
-      location: "Mountain Pass",
-      participants: "80+ Thrill Seekers",
+      title: "3D slice off ",
+      date: "August 23, 2025",
+      time: "10:30AM - 12:30PM",
       image: event2,
-      price: "$275",
-      category: "Mountain Racing",
     },
     {
       id: 11,
-      title: "Fast & Furious Grand Prix",
-      date: "May 24, 2024",
-      time: "9:00 PM",
-      location: "Main Circuit",
-      participants: "100+ Racing Legends",
+      title: "Shark Tank",
+      date: "August 23, 2025",
+      time: "12:00PM - 2:00PM",
+
       image: event1,
-      price: "$350",
-      category: "Grand Prix",
     },
   ];
 
@@ -142,7 +99,7 @@ const Events = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {events.map((event) => (
             <Card key={event.id} className="card-racing hover-speed group overflow-hidden">
               <CardHeader className="p-0">
@@ -153,16 +110,9 @@ const Events = () => {
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+
                   
-                  {/* Event Badge */}
-                  <Badge className="absolute top-4 left-4 bg-primary/90 text-primary-foreground font-semibold">
-                    {event.category}
-                  </Badge>
                   
-                  {/* Price Badge */}
-                  <div className="absolute top-4 right-4 bg-secondary/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                    <span className="text-secondary-foreground font-bold">{event.price}</span>
-                  </div>
                 </div>
               </CardHeader>
               
@@ -182,38 +132,17 @@ const Events = () => {
                     <span className="text-sm">{event.time}</span>
                   </div>
                   
-                  <div className="flex items-center text-muted-foreground">
-                    <MapPin className="h-4 w-4 mr-2 text-primary" />
-                    <span className="text-sm">{event.location}</span>
-                  </div>
-                  
-                  <div className="flex items-center text-muted-foreground">
-                    <Users className="h-4 w-4 mr-2 text-secondary" />
-                    <span className="text-sm">{event.participants}</span>
-                  </div>
                 </div>
                 
-                <Button className="w-full btn-nitro hover-nitro">
+                <Button 
+                  className="w-full btn-nitro hover-nitro"
+                  onClick={() => window.open('https://docs.google.com/forms/d/11YTYvjiK3GT47C1fOvYRLfnHW3xWjDIoF7_dUlH3POk/edit', '_blank')}
+                >
                   REGISTER NOW
                 </Button>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Events Summary */}
-        <div className="mt-16 text-center">
-          <div className="bg-card/50 backdrop-blur-md rounded-2xl p-8 border border-border/50">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Ready to <span className="text-neon">Race</span>?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Join the most intense racing events in the city. Registration is open for all skill levels.
-            </p>
-            <Button size="lg" className="btn-racing hover-nitro">
-              VIEW ALL EVENTS
-            </Button>
-          </div>
         </div>
       </div>
     </section>

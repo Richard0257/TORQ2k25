@@ -37,7 +37,7 @@ const Hero = () => {
           </span>
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center items-center">
           <Button
             onClick={scrollToEvents}
             size="lg"
@@ -45,30 +45,6 @@ const Hero = () => {
           >
             JOIN THE RACE
           </Button>
-          
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground text-lg px-8 py-6 hover-speed"
-          >
-            WATCH TRAILER
-          </Button>
-        </div>
-
-        {/* Racing Stats */}
-        <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-black text-neon mb-2">250+</div>
-            <div className="text-sm text-muted-foreground uppercase tracking-wider">MPH TOP SPEED</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-black text-speed mb-2">11</div>
-            <div className="text-sm text-muted-foreground uppercase tracking-wider">RACING EVENTS</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-black text-neon mb-2">500+</div>
-            <div className="text-sm text-muted-foreground uppercase tracking-wider">RACERS</div>
-          </div>
         </div>
       </div>
 
