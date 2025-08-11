@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Fast & Furious Design System - Racing-inspired theme with neon accents
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Racing Theme */
+    --background: 220 15% 8%;
+    --foreground: 210 20% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card System */
+    --card: 220 15% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover */
+    --popover: 220 15% 10%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Nitro Orange - Primary Racing Color */
+    --primary: 15 100% 60%;
+    --primary-foreground: 220 15% 8%;
+    --primary-glow: 15 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Street Blue - Secondary Racing Color */
+    --secondary: 195 100% 50%;
+    --secondary-foreground: 220 15% 8%;
+    --secondary-glow: 195 100% 60%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Racing Elements */
+    --muted: 220 10% 20%;
+    --muted-foreground: 210 10% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Chrome/Silver */
+    --accent: 210 15% 25%;
+    --accent-foreground: 210 20% 95%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Destructive - Racing Red */
+    --destructive: 0 85% 55%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & Inputs */
+    --border: 220 10% 25%;
+    --input: 220 10% 20%;
+    --ring: 15 100% 60%;
 
-    --radius: 0.5rem;
+    /* Design System Enhancements */
+    --radius: 0.75rem;
+    
+    /* Racing Gradients */
+    --gradient-nitro: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-speed: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-racing: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--background)), hsl(220 15% 5%));
+    
+    /* Racing Shadows */
+    --shadow-nitro: 0 10px 40px hsl(var(--primary) / 0.3);
+    --shadow-speed: 0 10px 40px hsl(var(--secondary) / 0.3);
+    --shadow-racing: 0 20px 60px hsl(var(--primary) / 0.2);
+    
+    /* Animations */
+    --transition-nitro: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-speed: transform 0.3s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +128,81 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Orbitron', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  /* Racing Button Variants */
+  .btn-nitro {
+    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground;
+    @apply hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] transition-all duration-300;
+    @apply border border-primary/20 backdrop-blur-sm;
+  }
+  
+  .btn-speed {
+    @apply bg-gradient-to-r from-secondary to-secondary-glow text-secondary-foreground;
+    @apply hover:shadow-[0_0_30px_hsl(var(--secondary)/0.5)] transition-all duration-300;
+    @apply border border-secondary/20 backdrop-blur-sm;
+  }
+  
+  .btn-racing {
+    @apply bg-gradient-to-r from-primary via-secondary to-primary text-primary-foreground;
+    @apply hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)] transition-all duration-300;
+    @apply border border-primary/30 backdrop-blur-sm;
+  }
+
+  /* Racing Card Variants */
+  .card-racing {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+    @apply hover:border-primary/50 hover:shadow-[0_10px_40px_hsl(var(--primary)/0.2)];
+    @apply transition-all duration-300;
+  }
+  
+  /* Racing Text Effects */
+  .text-neon {
+    @apply text-primary drop-shadow-[0_0_10px_hsl(var(--primary)/0.8)];
+  }
+  
+  .text-speed {
+    @apply text-secondary drop-shadow-[0_0_10px_hsl(var(--secondary)/0.8)];
+  }
+
+  /* Racing Animations */
+  @keyframes nitro-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.3);
+    }
+  }
+  
+  @keyframes speed-glow {
+    0%, 100% { 
+      text-shadow: 0 0 10px hsl(var(--secondary) / 0.8);
+    }
+    50% { 
+      text-shadow: 0 0 20px hsl(var(--secondary) / 1), 0 0 30px hsl(var(--secondary) / 0.8);
+    }
+  }
+
+  .animate-nitro-pulse {
+    animation: nitro-pulse 2s ease-in-out infinite;
+  }
+  
+  .animate-speed-glow {
+    animation: speed-glow 3s ease-in-out infinite;
+  }
+
+  /* Racing Hover Effects */
+  .hover-nitro {
+    @apply hover:scale-105 hover:shadow-[0_20px_60px_hsl(var(--primary)/0.4)];
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-speed {
+    @apply hover:scale-105 hover:shadow-[0_20px_60px_hsl(var(--secondary)/0.4)];
+    @apply transition-all duration-300 ease-out;
   }
 }
