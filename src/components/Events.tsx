@@ -99,15 +99,15 @@ const Events = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center max-w-6xl mx-auto">
           {events.map((event) => (
-            <Card key={event.id} className="card-racing hover-speed group overflow-hidden">
+            <Card key={event.id} className="card-racing hover-speed group overflow-hidden w-full max-w-md">
               <CardHeader className="p-0">
                 <div className="relative">
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
 
