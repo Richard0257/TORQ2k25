@@ -24,10 +24,20 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-5xl md:text-7xl font-black text-foreground mb-6 tracking-wider leading-tight">
-          <span className="text-neon animate-speed-glow">TORQ</span>{" "}
-          <span className="text-speed">2K25</span>{" "}
-          <span className="text-foreground">EVENTS</span>
+        {/* TORQ Logo */}
+        <div className="mb-8">
+          <div className="w-32 h-32 mx-auto bg-gradient-to-br from-silver-400 to-silver-600 rounded-full flex items-center justify-center shadow-2xl">
+            <div className="text-center">
+              <div className="text-3xl font-black text-gray-800 mb-1">TORQ</div>
+              <div className="text-xl font-bold text-gray-700">2K25</div>
+            </div>
+          </div>
+        </div>
+        
+        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-wider leading-tight">
+          <span className="text-fire text-glow">TORQ</span>{" "}
+          <span className="text-electric text-glow">2K25</span>{" "}
+          <span className="text-gold text-glow">EVENTS</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -37,7 +47,7 @@ const Hero = () => {
           </span>
         </p>
 
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col items-center space-y-4">
           <Button
             onClick={scrollToEvents}
             size="lg"
@@ -45,6 +55,15 @@ const Hero = () => {
           >
             JOIN THE RACE
           </Button>
+          
+          <div className="text-center space-y-2">
+            <p className="text-lg font-semibold text-yellow-400 animate-pulse">
+              Registration starts at 8:00 AM
+            </p>
+            <p className="text-md text-red-400 font-medium">
+              No on-spot registration
+            </p>
+          </div>
         </div>
       </div>
 

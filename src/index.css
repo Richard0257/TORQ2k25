@@ -168,6 +168,56 @@ All colors MUST be HSL.
     @apply text-secondary drop-shadow-[0_0_10px_hsl(var(--secondary)/0.8)];
   }
 
+  /* Colorful and Bright Text Styles */
+  .text-rainbow {
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: rainbow 3s ease-in-out infinite;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+
+  .text-electric {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+  }
+
+  .text-fire {
+    color: #ff4500;
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff4500;
+  }
+
+  .text-ice {
+    color: #00bfff;
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 15px #00bfff;
+  }
+
+  .text-gold {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+  }
+
+  .text-purple {
+    color: #9370db;
+    text-shadow: 0 0 5px #9370db, 0 0 10px #9370db, 0 0 15px #9370db;
+  }
+
+  .text-pink {
+    color: #ff69b4;
+    text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
+  }
+
+  .text-lime {
+    color: #32cd32;
+    text-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32, 0 0 15px #32cd32;
+  }
+}
+
   /* Racing Animations */
   @keyframes nitro-pulse {
     0%, 100% { 
@@ -193,6 +243,18 @@ All colors MUST be HSL.
   
   .animate-speed-glow {
     animation: speed-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   /* Racing Hover Effects */

@@ -91,8 +91,9 @@ const Events = () => {
     <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-background/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4 tracking-wider">
-            RACING <span className="text-speed">EVENTS</span>
+          <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-wider">
+            <span className="text-purple text-glow">RACING</span>{" "}
+            <span className="text-pink text-glow">EVENTS</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             11 heart-pounding racing events that will test your limits and push your ride to the edge.
