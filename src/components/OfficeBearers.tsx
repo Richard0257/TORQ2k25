@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import aksayaImage from "@/assets/Akshaya.jpg";
 import richardImage from "@/assets/Vice-President Richard Santhosh Jerry.jpeg";
-import mamthaImage from "@/assets/Mamtha.jpeg";
+import mamthaImage from "@/assets/mamthaa.jpeg";
 import prithivImage from "@/assets/Prithiv.jpeg";
 import noelImage from "@/assets/Noel.jpg";
 import rakshanaImage from "@/assets/Rakshana.jpg"; // Example
