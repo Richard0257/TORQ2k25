@@ -1,60 +1,72 @@
 import { Card, CardContent } from "@/components/ui/card";
+import aksayaImage from "@/assets/Akshaya.jpg";
+import richardImage from "@/assets/Vice-President Richard Santhosh Jerry.jpeg";
 
 const OfficeBearers = () => {
   const officeBearers = [
     {
-      name: "Dr. Name",
-      position: "Faculty Coordinator",
-      image: "/placeholder-avatar.jpg", // Will be replaced with actual images
+      name: "Akshaya S",
+      position: "President",
+      image: aksayaImage,
     },
     {
-      name: "Student Name",
-      position: "Student Coordinator",
-      image: "/placeholder-avatar.jpg",
+      name: "Richard Santhosh Jerry R",
+      position: "Vice-President",
+      image: richardImage,
     },
     {
-      name: "Student Name",
-      position: "Technical Head",
-      image: "/placeholder-avatar.jpg",
+      name: "Mamtha",
+      position: "PRO",
+      image: "/HRO Mamtha.HEIC",
     },
     {
-      name: "Student Name",
-      position: "Event Coordinator",
-      image: "/placeholder-avatar.jpg",
-    },
-    {
-      name: "Student Name",
-      position: "Public Relations",
-      image: "/placeholder-avatar.jpg",
-    },
-    {
-      name: "Student Name",
+      name: "Prithiv",
       position: "Treasurer",
-      image: "/placeholder-avatar.jpg",
+      image: "/PrithivS.jpg",
+    },
+    {
+      name: "Noel Jhon P",
+      position: "Publicity and Communication",
+      image: "/Noel.jpg",
+    },
+    {
+      name: "Rakshana Shri",
+      position: "General Secretary",
+      image: "/Rakshana.PNG",
     },
   ];
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background/50 to-background">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-left mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4 tracking-wider">
             OFFICE <span className="text-rainbow">BEARERS</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl">
             Meet the dedicated team behind TORQ2K25
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-start">
           {officeBearers.map((bearer, index) => (
             <Card key={index} className="card-racing hover-nitro group overflow-hidden w-full max-w-sm">
               <CardContent className="p-6 text-center">
                 <div className="relative mb-6">
-                  <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4 group-hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] transition-all duration-300">
-                    <span className="text-4xl font-bold text-primary-foreground">
-                      {bearer.name.split(' ').map(n => n[0]).join('')}
-                    </span>
+                  <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4 group-hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] transition-all duration-300 overflow-hidden">
+                    <img
+                      src={bearer.image}
+                      alt={bearer.name}
+                      className="w-full h-full object-cover rounded-full"
+                      style={{
+                        objectPosition: 'center top',
+                        minHeight: '100%',
+                        minWidth: '100%'
+                      }}
+                      onError={(e) => {
+                        console.error(`Failed to load image for ${bearer.name}:`, e);
+                      }}
+                    />
                   </div>
                   
                   {/* Position Badge */}

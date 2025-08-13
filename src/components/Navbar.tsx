@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Menu, X, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import licetLogo from "@/assets/licet-logo.jpg"
+import armeLogo from "@/assets/arme-logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,34 +27,36 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Left Side - LICET Logo */}
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xs">LICET</span>
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img
+                src={licetLogo}
+                alt="LICET Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <h1 className="text-2xl font-bold text-neon font-[900] tracking-wider">
-              TORQ2K25
+            <h1 className="text-m font-bold text-neon font-[900] tracking-wider">
+              Loyola-ICAM College of Engineering and Technology
             </h1>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="flex items-baseline space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-foreground hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium tracking-wide"
-                >
-                  {item.name}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Side - ARME Logo and Instagram */}
+          {/* Right Side - Navigation, Instagram, ARME Logo, and Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xs">ARME</span>
+            {/* Desktop Navigation */}
+            <div className="hidden md:block">
+              <div className="flex items-baseline space-x-8">
+                {navItems.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.href)}
+                    className="text-foreground hover:text-primary transition-colors duration-300 px-3 py-2 text-sm font-medium tracking-wide"
+                  >
+                    {item.name}
+                  </button>
+                ))}
+              </div>
             </div>
+
+            {/* Instagram Button */}
             <Button
               variant="ghost"
               size="sm"
@@ -61,6 +65,15 @@ const Navbar = () => {
             >
               <Instagram size={20} />
             </Button>
+
+            {/* ARME Logo */}
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img
+                src={armeLogo}
+                alt="ARME Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
             
             {/* Mobile menu button */}
             <div className="md:hidden">

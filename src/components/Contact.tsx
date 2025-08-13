@@ -11,12 +11,13 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Track Location",
-      info: "Loyola-ICAM College Of Engineering And Technology",
+      info: "Loyola College Licet, Loyola Campus, Nungambakkam, Chennai, Tamil Nadu 600034",
+      link: "https://www.google.com/maps?q=Loyola+College+Licet,+Loyola+Campus,+Nungambakkam,+Chennai,+Tamil+Nadu+600034",
     },
     {
       icon: Clock,
       title: "Racing Hours",
-      info: "Daily 10AM - 4PM",
+      info: "Daily 8AM - 4PM",
       subInfo: "Weekend specials available",
     },
   ];
@@ -43,15 +44,26 @@ const Contact = () => {
                   <div className="mx-auto w-16 h-16 bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center mb-4 group-hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] transition-all duration-300">
                     <IconComponent className="h-8 w-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-foreground">
-                    {contact.title}
-                  </CardTitle>
+              <CardTitle className="text-lg font-bold text-foreground">
+                {contact.title}
+              </CardTitle>
                 </CardHeader>
                 
                 <CardContent className="pt-0">
-                  <p className="text-primary font-semibold mb-2">
-                    {contact.info}
-                  </p>
+              {contact.link ? (
+                <a
+                  href={contact.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-semibold mb-2 inline-block underline underline-offset-4 hover:text-primary/80"
+                >
+                  {contact.info}
+                </a>
+              ) : (
+                <p className="text-primary font-semibold mb-2">
+                  {contact.info}
+                </p>
+              )}
                   {contact.subInfo && (
                     <p className="text-sm text-muted-foreground">
                       {contact.subInfo}
