@@ -58,10 +58,7 @@ const Hero = () => {
           
           <div className="text-center space-y-2">
             <p className="text-lg font-semibold text-yellow-400 animate-pulse">
-              Registration starts at 8:00 AM
-            </p>
-            <p className="text-md text-red-400 font-medium">
-              No on-spot registration
+              Registration starts at 8:00 AM No on-spot registration
             </p>
           </div>
         </div>
