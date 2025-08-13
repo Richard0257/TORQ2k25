@@ -35,7 +35,7 @@ const Navbar = () => {
               />
             </div>
             <h1 className="text-s font-bold text-neon font-[900] tracking-wider">
-              Loyola-ICAM College of Engineering and Technology
+              LICET
             </h1>
           </div>
 
