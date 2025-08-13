@@ -1,88 +1,31 @@
 import { Calendar, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import event1 from "@/assets/event-1.jpg";
-import event2 from "@/assets/event-2.jpg";
+import CAD from "@/assets/CAD.jpg";
+import Truss from "@/assets/Truss.jpg";
+import Gearup from "@/assets/Gearup.jpg";
+import buzz from "@/assets/Truss.jpg";
+import dprinting from "@/assets/dprinting.jpg";
+import Forsenicfury from "@/assets/Forsenicfury.jpg";
+import Heist from "@/assets/Heist.jpg";
+import Hydro from "@/assets/Hydro.jpg";
+import RC from "@/assets/RC.jpg";
+import research from "@/assets/research.jpg";
+import Sharktank from "@/assets/Sharktank.jpg";
 
 const Events = () => {
   const events = [
-    {
-      id: 1,
-      title: "Gear up",
-      date: "August 23, 2025",
-      time: "10:00 AM to 12:00 PM",
-      image: event1,
-    },
-    {
-      id: 2,
-      title: "CAD Ace",
-      date: "August 23, 2025",
-      time: "1:00PM - 3:00PM",
-      image: event2,
-    },
-    {
-      id: 3,
-      title: "Beams to briliance",
-      date: "August 23, 2025",
-      time: "12:00PM - 2:00PM",
-      image: event1,
-    },
-    {
-      id: 4,
-      title: "Tech Buzz",
-      date: "August 23, 2025",
-      time: "2:00PM - 3:30PM",
-      image: event2,
-    },
-    {
-      id: 5,
-      title: "Research Drift",
-      date: "August 23, 2025",
-      time: "10:30AM - 12:00PM",
-      image: event1,
-    },
-    {
-      id: 6,
-      title: "Battles Bot",
-      date: "August 23, 2025",
-      time: "10:00AM - 12:00PM",
-      image: event2,
-    },
-    {
-      id: 7,
-      title: "Fluid thrust",
-      date: "August 23, 2025",
-      time: "12:00PM - 2:00PM",
-      image: event1,
-    },
-    {
-      id: 8,
-      title: "Forensic Fury",
-      date: "August 23, 2025",
-      time: "1:00PM - 3:30PM",
-      image: event2,
-    },
-    {
-      id: 9,
-      title: "Heist Hunt",
-      date: "August 23, 2025",
-      time: "12:00PM - 2:00PM",
-      image: event1,
-    },
-    {
-      id: 10,
-      title: "3D slice off",
-      date: "August 23, 2025",
-      time: "10:30AM - 12:30PM",
-      image: event2,
-    },
-    {
-      id: 11,
-      title: "Shark Tank",
-      date: "August 23, 2025",
-      time: "12:00PM - 2:00PM",
-      image: event1,
-    },
+    { id: 1, title: "Gear up", date: "August 23, 2025", time: "10:00 AM to 12:00 PM", description: "Lathe machine shaping challenge", image: Gearup },
+    { id: 2, title: "CAD Ace", date: "August 23, 2025", time: "1:00PM - 3:00PM", description: "Create CAD designs", image: CAD },
+    { id: 3, title: "Beams to briliance", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Build stable truss structure", image: Truss },
+    { id: 4, title: "Tech Buzz", date: "August 23, 2025", time: "2:00PM - 3:30PM", description: "Fast-paced quiz game", image: buzz },
+    { id: 5, title: "Research Drift", date: "August 23, 2025", time: "10:30AM - 12:00PM", description: "Present research to judges", image: research },
+    { id: 6, title: "Battles Bot", date: "August 23, 2025", time: "10:00AM - 12:00PM", description: "Build and race mini cars", image: RC },
+    { id: 7, title: "Fluid thrust", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Design water-air launcher", image: Hydro },
+    { id: 8, title: "Forensic Fury", date: "August 23, 2025", time: "1:00PM - 3:30PM", description: "Solve mystery as detective", image: Forsenicfury },
+    { id: 9, title: "Heist Hunt", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Treasure hunt puzzle game", image: Heist },
+    { id: 10, title: "3D slice off", date: "August 23, 2025", time: "10:30AM - 12:30PM", description: "3D model and print", image: dprinting },
+    { id: 11, title: "Shark Tank", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Pitch business ideas", image: Sharktank },
   ];
 
   return (
@@ -91,6 +34,7 @@ const Events = () => {
       className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-background/50"
     >
       <div className="max-w-7xl mx-auto">
+        {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-wider">
             <span className="text-purple text-glow">RACING</span>{" "}
@@ -101,7 +45,7 @@ const Events = () => {
           </p>
         </div>
 
-        {/* Common Register Button at top */}
+        {/* Register Button */}
         <div className="flex justify-center mb-12">
           <Button
             className="btn-nitro hover-nitro text-lg px-8 py-4"
@@ -116,12 +60,14 @@ const Events = () => {
           </Button>
         </div>
 
+        {/* Events Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center max-w-6xl mx-auto">
           {events.map((event) => (
             <Card
               key={event.id}
               className="card-racing hover-speed group overflow-hidden w-full max-w-md"
             >
+              {/* Image */}
               <CardHeader className="p-0">
                 <div className="relative">
                   <img
@@ -133,12 +79,18 @@ const Events = () => {
                 </div>
               </CardHeader>
 
+              {/* Content */}
               <CardContent className="p-6">
                 <CardTitle className="text-xl font-bold text-foreground mb-4 line-clamp-2 min-h-[3.5rem]">
                   {event.title}
                 </CardTitle>
 
                 <div className="space-y-3">
+                  <div className="flex items-center text-muted-foreground">
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-2"></span>
+                    <span className="text-sm text-orange-500">{event.description}</span>
+                  </div>
+
                   <div className="flex items-center text-muted-foreground">
                     <Calendar className="h-4 w-4 mr-2 text-primary" />
                     <span className="text-sm">{event.date}</span>

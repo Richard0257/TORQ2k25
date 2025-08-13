@@ -1,6 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import aksayaImage from "@/assets/Akshaya.jpg";
 import richardImage from "@/assets/Vice-President Richard Santhosh Jerry.jpeg";
+import mamthaImage from "@/assets/Mamtha.jpeg";
+import prithivImage from "@/assets/Prithiv.jpeg";
+import noelImage from "@/assets/Noel.jpg";
+import rakshanaImage from "@/assets/Rakshana.png";
 
 const OfficeBearers = () => {
   const officeBearers = [
@@ -17,22 +21,22 @@ const OfficeBearers = () => {
     {
       name: "Mamtha",
       position: "PRO",
-      image: "/HRO Mamtha.HEIC",
+      image: mamthaImage,
     },
     {
       name: "Prithiv",
       position: "Treasurer",
-      image: "/PrithivS.jpg",
+      image: prithivImage,
     },
     {
       name: "Noel Jhon P",
       position: "Publicity and Communication",
-      image: "/Noel.jpg",
+      image: noelImage,
     },
     {
       name: "Rakshana Shri",
       position: "General Secretary",
-      image: "/Rakshana.PNG",
+      image: rakshanaImage,
     },
   ];
 
@@ -61,14 +65,14 @@ const OfficeBearers = () => {
                       style={{
                         objectPosition: 'center top',
                         minHeight: '100%',
-                        minWidth: '100%'
+                        minWidth: '100%',
                       }}
                       onError={(e) => {
                         console.error(`Failed to load image for ${bearer.name}:`, e);
                       }}
                     />
                   </div>
-                  
+
                   {/* Position Badge */}
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
                     <div className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-semibold">
@@ -76,7 +80,7 @@ const OfficeBearers = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-foreground mb-2 tracking-wide">
                   {bearer.name}
                 </h3>

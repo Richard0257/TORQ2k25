@@ -17,7 +17,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Racing Hours",
-      info: "Daily 8AM - 4PM",
+      info: "8AM - 4PM",
       subInfo: "Weekend specials available",
     },
   ];

@@ -34,7 +34,7 @@ const Navbar = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <h1 className="text-m font-bold text-neon font-[900] tracking-wider">
+            <h1 className="text-s font-bold text-neon font-[900] tracking-wider">
               Loyola-ICAM College of Engineering and Technology
             </h1>
           </div>
