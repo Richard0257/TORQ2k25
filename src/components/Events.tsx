@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import CAD from "@/assets/CAD.jpg";
 import Truss from "@/assets/Truss.jpg";
 import Gearup from "@/assets/Gearup.jpg";
-import buzz from "@/assets/Truss.jpg";
+import buzz from "@/assets/buzz.jpg";
 import dprinting from "@/assets/dprinting.jpg";
 import Forsenicfury from "@/assets/Forsenicfury.jpg";
 import Heist from "@/assets/Heist.jpg";
