@@ -57,7 +57,7 @@ const Hero = () => {
           </Button>
           
           <div className="text-center space-y-2">
-            <p className="text-lg font-semibold text-yellow-400 animate-pulse">
+            <p className="text-m font-semibold text-red-400 animate-pulse">
               Registration starts at 8:00 AM No on-spot registration
             </p>
           </div>
