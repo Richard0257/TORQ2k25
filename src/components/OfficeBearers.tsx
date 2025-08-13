@@ -4,7 +4,8 @@ import richardImage from "@/assets/Vice-President Richard Santhosh Jerry.jpeg";
 import mamthaImage from "@/assets/Mamtha.jpeg";
 import prithivImage from "@/assets/Prithiv.jpeg";
 import noelImage from "@/assets/Noel.jpg";
-import rakshanaImage from "@/assets/Rakshana.png";
+import rakshanaImage from "@/assets/Rakshana.jpg"; // Example
+
 
 const OfficeBearers = () => {
   const officeBearers = [
