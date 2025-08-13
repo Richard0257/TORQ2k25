@@ -1,4 +1,4 @@
-import heroBackground from "@/assets/hero-background.jpg";
+import heroVideo from "@/assets/Videos.mp4";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -13,9 +13,11 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video/Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroBackground}
-          alt="Racing background"
+        <video
+          src={heroVideo}
+          autoPlay
+          loop
+          playsInline
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />
