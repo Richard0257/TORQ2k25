@@ -18,6 +18,8 @@ const Hero = () => {
           autoPlay
           loop
           playsInline
+          muted
+          volume={0.3}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />

@@ -12,6 +12,7 @@ import Hydro from "@/assets/Hydro.jpg";
 import RC from "@/assets/RC.jpg";
 import research from "@/assets/research.jpg";
 import Sharktank from "@/assets/Sharktank.jpg";
+import rocket from "@/assets/rocket.jpeg";
 
 const Events = () => {
   const events = [
@@ -26,6 +27,7 @@ const Events = () => {
     { id: 9, title: "Heist Hunt", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Treasure hunt puzzle game", image: Heist },
     { id: 10, title: "3D slice off", date: "August 23, 2025", time: "10:30AM - 12:30PM", description: "3D model and print", image: dprinting },
     { id: 11, title: "Shark Tank", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Pitch business ideas", image: Sharktank },
+    { id: 12, title: "Rocketry Workshop", date: "August 23, 2025", time: "10:30AM - 12:30PM", description: "Learn to design and build rockets", image: rocket },
   ];
 
   return (

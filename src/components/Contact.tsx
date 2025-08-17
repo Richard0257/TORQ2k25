@@ -1,13 +1,18 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const Contact = () => {
+interface ContactProps {
+  id?: string;
+}
+
+const Contact = ({ id }: ContactProps) => {
   const contactInfo = [
     {
       icon: Phone,
       title: "Call Us",
       info: "+91 63743 93335",
     },
+    
     {
       icon: MapPin,
       title: "Track Location",
@@ -23,7 +28,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-background/50 to-background">
+    <section id={id} className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-background/50 to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4 tracking-wider">

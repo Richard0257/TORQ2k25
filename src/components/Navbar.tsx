@@ -11,6 +11,8 @@ const Navbar = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Events", href: "#events" },
+    { name: "Rulebook", href: "#rulebook" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -35,7 +37,7 @@ const Navbar = () => {
               />
             </div>
             <h1 className="text-s font-bold text-neon font-[900] tracking-wider">
-              LICET
+              Loyola College of Engineering and Technology
             </h1>
           </div>
 
@@ -53,28 +55,25 @@ const Navbar = () => {
                     {item.name}
                   </button>
                 ))}
+                {/* Instagram Button */}
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => window.open('https://www.instagram.com/arme_licet/', '_blank')}
+                  className="text-foreground hover:text-pink-500"
+                >
+                  <Instagram size={20} />
+                </Button>
+                {/* ARME Logo */}
+                <div className="w-12 h-12 flex items-center justify-center">
+                  <img
+                    src={armeLogo}
+                    alt="ARME Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
-
-            {/* Instagram Button */}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => window.open('https://www.instagram.com/arme_licet/', '_blank')}
-              className="text-foreground hover:text-pink-500"
-            >
-              <Instagram size={20} />
-            </Button>
-
-            {/* ARME Logo */}
-            <div className="w-12 h-12 flex items-center justify-center">
-              <img
-                src={armeLogo}
-                alt="ARME Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            
             {/* Mobile menu button */}
             <div className="md:hidden">
               <Button
