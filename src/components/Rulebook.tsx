@@ -92,11 +92,6 @@ const Rulebook = ({ id }: RulebookProps) => {
                 <li>Punctuality will be added points (Timeline should be strictly followed)</li>
                 <li>Jury’s decision will be final</li>
               </ul>
-              <h3 className="text-md font-semibold text-foreground mt-4 mb-2">Contact details :</h3>
-              <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1">
-                <li>Sneha B : 9791178161</li>
-                <li>Sarah Joyce Venci : 9884621996</li>
-              </ul>
             </CardContent>
           </Card>
 
