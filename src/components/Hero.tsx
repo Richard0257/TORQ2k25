@@ -33,16 +33,9 @@ const Hero = () => {
           TORQ <span className="text-yellow-400">2K25</span>
         </h1>
 
-        {/* Tagline */}
-        <p className="text-lg md:text-2xl text-gray-300 font-medium max-w-3xl mx-auto drop-shadow-md">
-          Experience the <span className="text-red-500">adrenaline</span> of
-          <span className="text-yellow-400"> high-octane racing</span> — Where
-          passion meets <span className="text-white">speed</span>.
-        </p>
-
         {/* CTA Button */}
         <div className="flex justify-center mt-6">
-          <Button className="px-8 py-4 rounded-xl text-lg font-semibold bg-red-600 hover:bg-red-700 text-white shadow-lg transition duration-300">
+          <Button className="px-6 py-3 rounded-lg text-base font-semibold bg-red-600 hover:bg-red-700 text-white shadow-md transition duration-300">
             Join the Race
           </Button>
         </div>
