@@ -44,11 +44,10 @@ const Hero = () => {
             Event Details
           </h2>
           <p className="text-gray-300 mt-1 text-sm md:text-base">
-            <span className="text-red-500">23 August 2025</span> • Loyola ICAM
-            College of Engineering & Technology
+            <span className="text-red-500">23 August 2025</span> 
           </p>
           <p className="text-gray-300 text-sm md:text-base">
-            10:00 AM – 4:00 PM • Free Entry with Registration
+            Registration starts at 8:00 AM
           </p>
         </div>
       </div>
