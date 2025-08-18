@@ -34,24 +34,20 @@ const Hero = () => {
         </h1>
 
         {/* CTA Button */}
-        <div className="flex justify-center mt-6">
-          <Button className="px-6 py-3 rounded-lg text-base font-semibold bg-red-600 hover:bg-red-700 text-white shadow-md transition duration-300">
-            Join the Race
-          </Button>
-        </div>
+       
       </div>
 
-      {/* Event Details */}
+      {/* Event Details (Smaller Card) */}
       <div className="absolute bottom-6 w-full flex justify-center px-4">
-        <div className="bg-black/60 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-lg max-w-lg text-center">
-          <h2 className="text-xl md:text-2xl font-bold text-yellow-400">
+        <div className="bg-black/60 backdrop-blur-md p-3 md:p-4 rounded-l shadow-md max-w-md text-center">
+          <h2 className="text-lg md:text-xl font-bold text-yellow-400">
             Event Details
           </h2>
-          <p className="text-gray-300 mt-2">
+          <p className="text-gray-300 mt-1 text-sm md:text-base">
             <span className="text-red-500">23 August 2025</span> • Loyola ICAM
             College of Engineering & Technology
           </p>
-          <p className="text-gray-300">
+          <p className="text-gray-300 text-sm md:text-base">
             10:00 AM – 4:00 PM • Free Entry with Registration
           </p>
         </div>
