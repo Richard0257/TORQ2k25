@@ -34,8 +34,7 @@ const Contact = ({ id }: ContactProps) => {
             GET IN <span className="text-neon">TOUCH</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to join the racing family? Contact us for registration, 
-            event details, or just to talk about your need for speed.
+          Contact us for registration and event details
           </p>
         </div>
 
