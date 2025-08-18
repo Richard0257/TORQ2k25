@@ -4,7 +4,7 @@ import richardImage from "@/assets/Vice-President Richard Santhosh Jerry.jpeg";
 import mamthaImage from "@/assets/mamthaa.jpeg";
 import prithivImage from "@/assets/Prithiv.jpeg";
 import noelImage from "@/assets/Noel.jpg";
-import rakshanaImage from "@/assets/Rakshana.jpg"; // Example
+import swathiImage from "@/assets/swathi.jpeg"; // Example
 
 
 const OfficeBearers = () => {
@@ -35,9 +35,9 @@ const OfficeBearers = () => {
       image: noelImage,
     },
     {
-      name: "Rakshana Shri",
+      name: "Swathi",
       position: "General Secretary",
-      image: rakshanaImage,
+      image: swathiImage,
     },
   ];
 
