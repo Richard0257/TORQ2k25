@@ -1,77 +1,62 @@
-import heroVideo from "@/assets/Videos.mp4";
 import { Button } from "@/components/ui/button";
+import bgImage from "@/assets/ferrari-bg.jpg";
+import logo from "@/assets/logo.png"; // 🔥 Transparent PNG logo
 
 const Hero = () => {
-  const scrollToEvents = () => {
-    const element = document.querySelector("#events");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video/Image */}
-      <div className="absolute inset-0 z-0">
-        <video
-          src={heroVideo}
-          autoPlay
-          loop
-          playsInline
-          muted
-          volume={0.3}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/80" />
-      </div>
+    <section
+      className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-6 bg-cover bg-center"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/70 z-0" />
 
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* TORQ Logo */}
-        <div className="mb-8">
-          <div className="w-32 h-32 mx-auto bg-gradient-to-br from-silver-400 to-silver-600 rounded-full flex items-center justify-center shadow-2xl">
-            <div className="text-center">
-              <div className="text-3xl font-black text-gray-800 mb-1">TORQ</div>
-              <div className="text-xl font-bold text-gray-700">2K25</div>
-            </div>
-          </div>
-        </div>
-        
-        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-wider leading-tight">
-          <span className="text-fire text-glow">TORQ</span>{" "}
-          <span className="text-electric text-glow">2K25</span>{" "}
-          <span className="text-gold text-glow">EVENTS</span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Experience the ultimate adrenaline rush with high-octane racing events.
-          <span className="block mt-2 text-primary font-semibold">
-            Live life a quarter mile at a time.
-          </span>
+      {/* Hero Content */}
+      <div className="relative z-10 max-w-4xl space-y-6">
+        {/* Department Text */}
+        <p className="text-lg md:text-2xl font-semibold text-gold tracking-widest uppercase mb-4 drop-shadow-md">
+          Department of Mechanical Engineering
         </p>
 
-        <div className="flex flex-col items-center space-y-4">
-          <Button
-            onClick={scrollToEvents}
-            size="lg"
-            className="btn-racing text-lg px-8 py-6 hover-nitro animate-nitro-pulse"
-          >
-            JOIN THE RACE
+        {/* Logo */}
+        <div className="flex justify-center">
+          <img
+            src={logo}
+            alt="TORQ 2K25 Logo"
+            className="h-40 md:h-56 object-contain mx-auto mb-4 drop-shadow-[0_0_25px_rgba(255,255,255,0.3)]"
+          />
+        </div>
+
+        {/* Main Heading */}
+        <h1 className="text-6xl md:text-7xl font-extrabold text-primary drop-shadow-lg">
+          TORQ <span className="text-gold">2K25</span>
+        </h1>
+
+        {/* Tagline */}
+        <p className="text-xl md:text-2xl text-muted-foreground font-medium drop-shadow-md">
+          Experience the <span className="text-primary">adrenaline</span> of
+          <span className="text-gold"> high-octane racing</span> —  
+          Where passion meets <span className="text-foreground">speed</span>.
+        </p>
+
+        {/* Join Button */}
+        <div className="flex justify-center mt-6">
+          <Button className="btn-nitro animate-pulse px-8 py-4 rounded-xl text-lg">
+            Join the Race
           </Button>
-          
-          <div className="text-center space-y-2">
-            <p className="text-m font-semibold text-red-400 animate-pulse">
-              Registration starts at 8:00 AM No on-spot registration
-            </p>
-          </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce"></div>
+      {/* Event Details */}
+      <div className="absolute bottom-6 w-full flex justify-center px-4">
+        <div className="card-racing p-4 md:p-6 max-w-lg text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-gold">Event Details</h2>
+          <p className="text-muted-foreground mt-2">
+            <span className="text-primary">23 August 2025</span> • Loyola ICAM College of Engineering & Technology
+          </p>
+          <p className="text-muted-foreground">
+            10:00 AM – 4:00 PM • Free Entry with Registration
+          </p>
         </div>
       </div>
     </section>

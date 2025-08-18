@@ -17,13 +17,12 @@ const Contact = ({ id }: ContactProps) => {
       icon: MapPin,
       title: "Track Location",
       info: "Loyola College Licet, Loyola Campus, Nungambakkam, Chennai, Tamil Nadu 600034",
-      link: "https://www.google.com/maps?q=Loyola+College+Licet,+Loyola+Campus,+Nungambakkam,+Chennai,+Tamil+Nadu+600034",
+      link: "https://www.google.com/maps?q=Loyola+Campus,+Nungambakkam,+Chennai,+Tamil+Nadu+600034",
     },
     {
       icon: Clock,
       title: "Racing Hours",
       info: "8AM - 4PM",
-      subInfo: "Weekend specials available",
     },
   ];
 
@@ -69,11 +68,6 @@ const Contact = ({ id }: ContactProps) => {
                   {contact.info}
                 </p>
               )}
-                  {contact.subInfo && (
-                    <p className="text-sm text-muted-foreground">
-                      {contact.subInfo}
-                    </p>
-                  )}
                 </CardContent>
               </Card>
             );
