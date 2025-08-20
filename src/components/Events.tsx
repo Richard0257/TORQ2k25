@@ -8,7 +8,7 @@ import buzz from "@/assets/buzz.jpg";
 import dprinting from "@/assets/dprinting.jpg";
 import Forsenicfury from "@/assets/Forsenicfury.jpg";
 import Heist from "@/assets/Heist.jpg";
-import Hydro from "@/assets/Hydro.jpg";
+import fluid from "@/assets/fluid.png";
 import RC from "@/assets/RC.jpg";
 import research from "@/assets/research.jpg";
 import Sharktank from "@/assets/Sharktank.jpg";
@@ -22,7 +22,7 @@ const Events = () => {
     { id: 4, title: "Tech Buzz", date: "August 23, 2025", time: "2:00PM - 3:30PM", description: "Fast-paced quiz game", image: buzz },
     { id: 5, title: "Research Drift", date: "August 23, 2025", time: "10:30AM - 12:00PM", description: "Present research to judges", image: research },
     { id: 6, title: "Battles Bot", date: "August 23, 2025", time: "10:00AM - 12:00PM", description: "Build and race mini cars", image: RC },
-    { id: 7, title: "Fluid thrust", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Design water-air launcher", image: Hydro },
+    { id: 7, title: "Fluid thrust", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Design water-air launcher", image: fluid },
     { id: 8, title: "Forensic Fury", date: "August 23, 2025", time: "1:00PM - 3:30PM", description: "Solve mystery as detective", image: Forsenicfury },
     { id: 9, title: "Heist Hunt", date: "August 23, 2025", time: "12:00PM - 2:00PM", description: "Treasure hunt puzzle game", image: Heist },
     { id: 10, title: "3D slice off", date: "August 23, 2025", time: "10:30AM - 12:30PM", description: "3D model and print", image: dprinting },

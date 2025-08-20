@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import aksayaImage from "@/assets/Akshaya.jpg";
 import richardImage from "@/assets/Vice-President Richard Santhosh Jerry.jpeg";
-import mamthaImage from "@/assets/mamthaa.jpeg";
+import mamthaImage from "@/assets/mamtha.png";
 import prithivImage from "@/assets/Prithiv.jpeg";
 import noelImage from "@/assets/Noel.jpg";
 import swathiImage from "@/assets/swathi.jpeg"; // Example
@@ -35,7 +35,7 @@ const OfficeBearers = () => {
       image: noelImage,
     },
     {
-      name: "Swathi",
+      name: "Swathi G",
       position: "General Secretary",
       image: swathiImage,
     },

@@ -1,16 +1,9 @@
 import { Button } from "@/components/ui/button";
-import bgImage from "@/assets/ferrari-bg.jpg";
 import logo from "@/assets/logo.png"; // Transparent PNG logo
 
 const Hero = () => {
   return (
-    <section
-      className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-6 bg-cover bg-center"
-      style={{ backgroundImage: `url(${bgImage})` }}
-    >
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70 z-0" />
-
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-6">
       {/* Hero Content */}
       <div className="relative z-10 max-w-5xl space-y-6 animate-fadeIn">
         
