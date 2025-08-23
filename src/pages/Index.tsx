@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Officers from "@/components/Officers";
 import Events from "@/components/Events";
 import OfficeBearers from "@/components/OfficeBearers";
-import Sponsors from "@/components/Sponsors";
 import Contact from "@/components/Contact";
 import mclarenVideo from "@/assets/mclaren-f1.mp4";
 
@@ -31,7 +30,6 @@ const Index = () => {
         <Officers />
         <Events />
         <OfficeBearers />
-        <Sponsors />
         <Contact id="contact" />
       </main>
     </div>

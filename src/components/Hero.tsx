@@ -30,32 +30,30 @@ const Hero = () => {
           TORQ <span className="text-yellow-400">2K25</span>
         </h1>
 
-        {/* Sponsorship Showcase - Bigger and below title */}
+        {/* Sponsorship Showcase - Below title */}
         <div className="mt-8 md:mt-12 animate-fadeIn">
           <div className="bg-white/95 backdrop-blur-lg p-4 md:p-8 rounded-xl md:rounded-2xl shadow-2xl max-w-4xl md:max-w-5xl mx-auto border border-gray-200 hover:bg-white transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,0,0,0.1)]">
-            <p className="text-gray-800 text-sm md:text-base mb-4 md:mb-6 uppercase tracking-widest font-bold">Proudly Sponsored By</p>
-                         <div className="flex items-center justify-center space-x-6 md:space-x-12 opacity-100">
-               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
-                 <img src={JADE} alt="JADE" className="w-full h-full object-contain" />
-               </div>
-               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
-                 <img src={soft} alt="Soft" className="w-full h-full object-contain" />
-               </div>
-               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
-                 <img src={suziki} alt="Suziki" className="w-full h-full object-contain" />
-               </div>
-               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
-                 <img src={esiko} alt="Esiko" className="w-full h-full object-contain" />
-               </div>
-             </div>
+            <p className="text-gray-800 text-sm md:text-base mb-4 md:mb-6 uppercase tracking-wider font-bold">Proudly Sponsored By</p>
+            <div className="flex items-center justify-center space-x-6 md:space-x-12 opacity-100">
+              <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                <img src={JADE} alt="JADE" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                <img src={soft} alt="Soft" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                <img src={suziki} alt="Suziki" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                <img src={esiko} alt="Esiko" className="w-full h-full object-contain" />
+              </div>
+            </div>
           </div>
         </div>
 
         {/* CTA Button */}
        
       </div>
-
-
     </section>
   );
 };
