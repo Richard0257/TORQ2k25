@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png"; // Transparent PNG logo
+import JADE from "@/assets/JADE.png";
+import soft from "@/assets/soft.jpg";
+import suziki from "@/assets/suziki.jpg";
+import esiko from "@/assets/esiko.png";
 
 const Hero = () => {
   return (
@@ -26,24 +30,32 @@ const Hero = () => {
           TORQ <span className="text-yellow-400">2K25</span>
         </h1>
 
+        {/* Sponsorship Showcase - Bigger and below title */}
+        <div className="mt-8 md:mt-12 animate-fadeIn">
+          <div className="bg-white/95 backdrop-blur-lg p-4 md:p-8 rounded-xl md:rounded-2xl shadow-2xl max-w-4xl md:max-w-5xl mx-auto border border-gray-200 hover:bg-white transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,0,0,0.1)]">
+            <p className="text-gray-800 text-sm md:text-base mb-4 md:mb-6 uppercase tracking-widest font-bold">Proudly Sponsored By</p>
+                         <div className="flex items-center justify-center space-x-6 md:space-x-12 opacity-100">
+               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                 <img src={JADE} alt="JADE" className="w-full h-full object-contain" />
+               </div>
+               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                 <img src={soft} alt="Soft" className="w-full h-full object-contain" />
+               </div>
+               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                 <img src={suziki} alt="Suziki" className="w-full h-full object-contain" />
+               </div>
+               <div className="w-16 h-16 md:w-20 md:h-20 hover:scale-125 transition-transform duration-300 hover:drop-shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white rounded-lg p-2 shadow-sm">
+                 <img src={esiko} alt="Esiko" className="w-full h-full object-contain" />
+               </div>
+             </div>
+          </div>
+        </div>
+
         {/* CTA Button */}
        
       </div>
 
-      {/* Event Details (Smaller Card) */}
-      <div className="absolute bottom-6 w-full flex justify-center px-4">
-        <div className="bg-black/60 backdrop-blur-md p-3 md:p-4 rounded-l shadow-md max-w-md text-center">
-          <h2 className="text-lg md:text-xl font-bold text-yellow-400">
-            Event Details
-          </h2>
-          <p className="text-gray-300 mt-1 text-sm md:text-base">
-            <span className="text-red-500">23 August 2025</span> 
-          </p>
-          <p className="text-gray-300 text-sm md:text-base">
-            Registration starts at 8:00 AM
-          </p>
-        </div>
-      </div>
+
     </section>
   );
 };

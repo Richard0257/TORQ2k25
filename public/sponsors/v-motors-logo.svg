@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- V letter - thicker and more prominent -->
+  <path d="M50 50 L100 150 L150 50" stroke="#FF4500" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Horizontal line - thicker -->
+  <line x1="60" y1="170" x2="140" y2="170" stroke="#FF4500" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Dot - larger -->
+  <circle cx="100" cy="180" r="6" fill="#FF4500"/>
+</svg>

@@ -62,3 +62,40 @@
 .about-section {
   background: linear-gradient(to bottom, hsl(0, 0%, 5%), hsl(0, 0%, 12%)); /* black → asphalt gray */
 }
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Sponsorship Tiers */
+.sponsor-platinum {
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db, #9ca3af);
+  border-color: #6b7280;
+}
+
+.sponsor-gold {
+  background: linear-gradient(135deg, #fef3c7, #fde68a, #f59e0b);
+  border-color: #d97706;
+}
+
+.sponsor-silver {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb, #d1d5db);
+  border-color: #9ca3af;
+}
+
+.sponsor-bronze {
+  background: linear-gradient(135deg, #fef3c7, #fde68a, #f59e0b);
+  border-color: #d97706;
+}
